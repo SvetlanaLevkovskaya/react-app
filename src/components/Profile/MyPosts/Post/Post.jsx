@@ -1,15 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import styles from "./Post.module.css"
+import post from "./post.png"
 
-const Post = () => {
-  return <div className={styles.items}>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbIo5vLF-x4PhTzKYSJe_DcaE8z_cfRDKRiQ&usqp=CAU" alt=""/> 
+class Post extends Component {
+  render() {
+  return (
+        <div className={styles.items}>
+          <img src={post} className={styles.Post} alt="Post" /> 
           Post 1
           <div>
           <span>like</span>
           </div>
         </div>
-             
+   );
+  }       
 }
 
 export default Post;

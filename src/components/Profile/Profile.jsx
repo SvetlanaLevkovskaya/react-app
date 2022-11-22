@@ -1,11 +1,14 @@
-//import React from "react";
+import React, { Component } from "react";
 import MyPosts from "./MyPosts/MyPosts";
 import styles from "./Profile.module.css"
+import profile from "./profile.jpg"
 
-const Profile = () => {
-  return <div className={styles.content}>
+class Profile extends Component {
+  render() {
+  return (
+      <div className={styles.content}>
         <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRg_0jG33ShEMVfbTNe3r7yWUDxyrw__BGxg&usqp=CAU" alt="img"/>
+          <img src={profile} className={styles.Profile} alt="Profile" />
         </div>
         <div>
           {" "}
@@ -14,7 +17,8 @@ const Profile = () => {
         </div>
         <MyPosts />
       </div>
-    
+   );
+  }  
 }
 
 export default Profile;
