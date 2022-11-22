@@ -1,0 +1,19 @@
+.content {
+    margin: 5px;
+    padding: 10px;
+    grid-area: c;
+    background-color:rgb(197, 245, 247);
+   }
+  
+  .content img {
+    width: 100%;
+    height: 250px;
+   }
+
+   .item {
+    color: rebeccapurple;
+   }
+
+   .posts {
+    color:brown;
+   }
