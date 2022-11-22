@@ -1,4 +1,5 @@
-import React from "react";
+//import React from "react";
+import MyPosts from "./MyPosts/MyPosts";
 import styles from "./Profile.module.css"
 
 const Profile = () => {
@@ -11,13 +12,7 @@ const Profile = () => {
           avatar + desc
           {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRY2YhMsJluE4eJFwPBIZu9k12vyBc7mRrnw&usqp=CAU" /> */}
         </div>
-        <div>
-          {" "}
-          My posts
-          <div className={styles.posts}> New post</div>
-          <div className={styles.item}> Post 1</div>
-          <div className={styles.item}> Post 2</div>
-        </div>
+        <MyPosts />
       </div>
     
 }
