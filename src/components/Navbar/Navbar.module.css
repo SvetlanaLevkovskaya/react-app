@@ -10,7 +10,13 @@
     text-decoration: none;
 }
 
-.item a:active, a:hover {
-  color:black !important;
+
+.item a:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+.item .active {
+  color:black;
   text-decoration: underline;
 }
