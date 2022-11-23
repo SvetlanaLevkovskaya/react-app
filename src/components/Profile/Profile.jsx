@@ -4,13 +4,13 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 class Profile extends Component {
   render() {
-  return (
+    return (
       <div>
         <ProfileInfo />
         <MyPosts />
       </div>
-   );
-  }  
+    );
+  }
 }
 
 export default Profile;
