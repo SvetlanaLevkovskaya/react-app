@@ -1,4 +1,23 @@
- .posts {
-    color:chocolate;
+ .postsBlock {
+    color:darkblue;
+    padding: 10px;
  }
  
+ .posts {
+   margin: 10px;
+ }
+
+ .button {
+   margin-left: 150px;
+
+ }
+
+ .btn {
+   background: #008EB0;
+   border: none;
+   color: white;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+   border-radius: 5px;
+
+ }

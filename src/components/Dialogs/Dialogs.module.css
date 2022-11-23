@@ -4,12 +4,7 @@
 }
 
 .dialog {
-
-}
-
-.dialog:active {
-  color:blueviolet
-
+  text-decoration: none;
 }
 
 .dialogsItems {
@@ -21,6 +16,6 @@
   padding: 10px;
 }
 
-.message {
-
+.message:hover {
+  color:blueviolet;
 }
