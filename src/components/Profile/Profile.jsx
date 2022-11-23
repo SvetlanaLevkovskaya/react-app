@@ -6,9 +6,9 @@ import profile from "./profile.jpg"
 class Profile extends Component {
   render() {
   return (
-      <div className={styles.content}>
+      <div>
         <div>
-          <img src={profile} className={styles.Profile} alt="Profile" />
+          <img src={profile} className={styles.profile} alt="profile" />
         </div>
         <div>
           {" "}

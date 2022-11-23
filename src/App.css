@@ -10,3 +10,10 @@
   /* gap: 10px; */
 }
 
+.app-wrapper-content {
+  margin: 5px;
+  padding: 10px;
+  grid-area: c;
+  background-color:rgb(197, 245, 247);
+}
+

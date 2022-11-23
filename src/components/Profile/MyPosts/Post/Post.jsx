@@ -7,7 +7,7 @@ class Post extends Component {
   render() {
     return (
         <div className={styles.items}>
-          <img src={post} className={styles.Post} alt="Post" /> 
+          <img src={post} className={styles.post} alt="post" /> 
           {this.props.message}
           <div>
           <span>like</span> {this.props.likecount}
