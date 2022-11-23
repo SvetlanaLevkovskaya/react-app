@@ -10,7 +10,7 @@ class Post extends Component {
           <img src={post} className={styles.Post} alt="Post" /> 
           {this.props.message}
           <div>
-          <span>like {this.props.likecount}</span>
+          <span>like</span> {this.props.likecount}
           </div>
         </div>
    );
