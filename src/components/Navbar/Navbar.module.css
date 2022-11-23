@@ -1,14 +1,16 @@
 .nav {
     margin: 5px;
-    padding: 10px;
+    padding: 20px;
     grid-area: n;
     background-color:rgb(244, 203, 246);
   }
 
-.item {
+.item a {
     color: white;
+    text-decoration: none;
 }
 
-.item.active{
-  color:blue;
+.item a:active, a:hover {
+  color:black !important;
+  text-decoration: underline;
 }
