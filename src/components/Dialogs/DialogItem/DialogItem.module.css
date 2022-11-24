@@ -1,0 +1,17 @@
+/* .dialog {
+  text-decoration: none;  
+}
+ */
+.dialog a {
+  text-decoration: none;
+  color: white;  
+}
+
+.dialog a:active, a:hover {
+  color:darkblue;
+  text-decoration: underline;
+}
+
+.dialogsItems {
+  padding: 10px;
+}

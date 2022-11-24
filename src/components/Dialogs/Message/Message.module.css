@@ -1,0 +1,31 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+ }
+
+/* .dialog {
+  text-decoration: none;  
+}
+ */
+.dialog a {
+  text-decoration: none;
+  color: white;  
+}
+
+.dialog a:active, a:hover {
+  color:darkblue;
+  text-decoration: underline;
+}
+
+.dialogsItems {
+  padding: 10px;
+}
+
+.messages {
+  padding: 10px;
+  color: white;
+}
+
+.message:hover {
+  color:darkcyan;
+}
