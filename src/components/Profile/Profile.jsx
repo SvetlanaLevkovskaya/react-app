@@ -1,16 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-class Profile extends Component {
-  render() {
-    return (
-      <div>
-        <ProfileInfo />
-        <MyPosts />
-      </div>
-    );
-  }
-}
+const Profile = (props) => {
+  return (
+    <div>
+      <ProfileInfo />
+      <MyPosts posts={props.posts} />
+    </div>
+  );
+};
 
 export default Profile;
