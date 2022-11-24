@@ -20,3 +20,45 @@
   color:black;
   text-decoration: underline;
 }
+
+.itemFriends {
+  padding: 30px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.itemFriends a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.itemFriends a:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+.itemFriends .active {
+  color:black;
+  text-decoration: underline;
+ 
+}
+
+.circle {
+  fill: #456BD9;
+  stroke: white;
+  stroke-width: 0.1875em;
+  
+}
+
+.friends {
+  color: white;
+  font-size: 16px;
+ 
+}
+
+.friend {
+  padding: 0px 10px 0px 0px;
+}
+
+
