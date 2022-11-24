@@ -6,27 +6,27 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.item}>
-        <NavLink to="/profile" activeClassName={styles.active}>
+        <NavLink to="/profile" activeclassname={styles.active}>
           Profile
         </NavLink>
       </div>
       <div className={`${styles.item} ${styles.active}`}>
-        <NavLink to="/dialogs" activeClassName={styles.active}>
+        <NavLink to="/dialogs" activeclassname={styles.active}>
           Dialogs
         </NavLink>
       </div>
       <div className={styles.item}>
-        <NavLink to="/news" activeClassName={styles.active}>
+        <NavLink to="/news" activeclassname={styles.active}>
           News
         </NavLink>
       </div>
       <div className={styles.item}>
-        <NavLink to="/music" activeClassName={styles.active}>
+        <NavLink to="/music" activeclassname={styles.active}>
           Music
         </NavLink>
       </div>
       <div className={styles.item}>
-        <NavLink to="/settings" activeClassName={styles.active}>
+        <NavLink to="/settings" activeclassname={styles.active}>
           Settings
         </NavLink>
       </div>

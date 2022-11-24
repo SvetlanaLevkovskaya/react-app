@@ -4,14 +4,27 @@
  */
 .dialog a {
   text-decoration: none;
-  color: white;  
+  color:cornflowerblue; 
+  padding: 0px 0px 0px 10px;
+  position: relative;
+  top: -20px;
 }
 
 .dialog a:active, a:hover {
-  color:darkblue;
+  color:darkcyan;
   text-decoration: underline;
+ 
 }
 
 .dialogsItems {
   padding: 10px;
+}
+
+.dialogItem {
+  background-image: url(./dialogItem.png);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  
+  
 }

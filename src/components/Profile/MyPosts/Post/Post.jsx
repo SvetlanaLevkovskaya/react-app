@@ -5,7 +5,7 @@ import post from "./post.png";
 class Post extends Component {
   render() {
     return (
-      <div className={styles.items}>
+      <div className={styles.items} >
         <img src={post} className={styles.post} alt="post" />
         {this.props.message}
         <div>
