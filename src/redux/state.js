@@ -29,9 +29,18 @@ let state = {
     friends: [
       { id: 1, name: "Viktor" },
       { id: 2, name: "Sasha" },
-      { id: 3, name: "Gleb" }
-    ]
-  }
+      { id: 3, name: "Gleb" },
+    ],
+  },
+};
+
+export let addPost = (postMessage) => {
+  let newPost = {
+    id: "7",
+    message: { postMessage },
+    likeCount: "0",
+  };
+  state.profilePage.posts.push(newPost);
 };
 
 export default state;

@@ -11,7 +11,7 @@ const Friends = (props) => {
  
   return (
     <div className={styles.friends}>
-      <div classname={styles.friend}> { friendElements }</div>
+      <div className={styles.friend}> { friendElements }</div>
      
     </div>
   );

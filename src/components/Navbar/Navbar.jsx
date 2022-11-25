@@ -35,17 +35,17 @@ const Navbar = () => {
         <div>
           <div >
             <svg viewBox="0 0 80 80" width="50" height="50">
-              <circle class={styles.circle} cx="40" cy="40" r="38" />
+              <circle className={styles.circle} cx="40" cy="40" r="38" />
             </svg>
             <span>     </span>
 
             <svg viewBox="0 0 80 80" width="50" height="50">
-              <circle class={styles.circle} cx="40" cy="40" r="38" />
+              <circle className={styles.circle} cx="40" cy="40" r="38" />
             </svg>
             <span>     </span>
 
             <svg viewBox="0 0 80 80" width="50" height="50">
-              <circle class={styles.circle} cx="40" cy="40" r="38" />
+              <circle className={styles.circle} cx="40" cy="40" r="38" />
             </svg>
           </div>
           <div className={styles.friends}>

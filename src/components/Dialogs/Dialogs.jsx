@@ -18,8 +18,8 @@ const Dialogs = (props) => {
 
   return (
     <div className={styles.dialogs}>
-      <div classname={styles.dialogItems}> { dialogElements }</div>
-      <div classname={styles.messages}> { messageElements }</div>
+      <div className={styles.dialogItems}> { dialogElements }</div>
+      <div className={styles.messages}> { messageElements }</div>
     </div>
   );
 };
