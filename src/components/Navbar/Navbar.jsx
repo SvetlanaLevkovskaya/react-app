@@ -32,26 +32,25 @@ const Navbar = () => {
       </div>
       <div className={styles.itemFriends}>
         <NavLink to="/friends">Friends</NavLink>
-        <div>
-          <div >
+        <div className={styles.conteiner}>
+          <div>
             <svg viewBox="0 0 80 80" width="50" height="50">
               <circle className={styles.circle} cx="40" cy="40" r="38" />
             </svg>
-            <span>     </span>
 
             <svg viewBox="0 0 80 80" width="50" height="50">
               <circle className={styles.circle} cx="40" cy="40" r="38" />
             </svg>
-            <span>     </span>
 
             <svg viewBox="0 0 80 80" width="50" height="50">
               <circle className={styles.circle} cx="40" cy="40" r="38" />
             </svg>
           </div>
+
           <div className={styles.friends}>
-          <span className={styles.friend}>Viktor </span>
-          <span className={styles.friend}>Sasha </span>
-          <span className={styles.friend}>Gleb</span>
+            <span className={styles.friend}>Viktor </span>
+            <span className={styles.friend}>Sasha </span>
+            <span className={styles.friend}>Gleb</span>
           </div>
         </div>
       </div>

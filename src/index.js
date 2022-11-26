@@ -7,8 +7,9 @@ import reportWebVitals from "./reportWebVitals";
 import state, { subscribe } from "./redux/state";
 import { addPost, updateNewPostText } from "./redux/state";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+
 let rerenderEntireTree = (state) => {
+  const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(
     <BrowserRouter>
       <React.StrictMode>
