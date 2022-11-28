@@ -7,6 +7,7 @@ import {
   addMessageActionCreator,
 } from "../../redux/state";
 
+
 const Dialogs = (props) => {
   let state = props.store.getState().dialogsPage;
 
@@ -32,16 +33,19 @@ const Dialogs = (props) => {
       <div className={styles.dialogsItems}>{dialogsElements}</div>
       <div className={styles.messages}>
         <div>{messagesElements}</div>
-        <div>
+        <div className={styles.addMessage}>
           <div>
             <textarea
+              className={styles.textarea}
               value={newMessageBody}
               onChange={onNewMessageChange}
               placeholder="Enter your message"
-            ></textarea>
+            />
           </div>
           <div>
-            <button onClick={onSendMessageClick}>Send</button>
+            <button className={styles.btn} onClick={onSendMessageClick}>
+              Send
+            </button>
           </div>
         </div>
       </div>
