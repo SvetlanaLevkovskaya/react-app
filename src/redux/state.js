@@ -55,9 +55,11 @@ let store = {
   dispatch(action) {
     this._state.profilePage = profileReducer(this._state.profilePage, action);
     this._state.dialogsPage = dialogReducer(this._state.dialogsPage, action);
-    this._state.navBar = navbarReducer(this._state.navBarPage, action);
+    this._state.navBar = navbarReducer(this._state.navBar, action);
     this._callSubscriber(this._state);
   },
 };
 
 export default store;
+
+
