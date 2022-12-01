@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./MyPosts.module.css";
 import Post from "./Post/Post";
-import { addPostActionCreator } from "../../../redux/profileReduser";
-import { updataNewPostTextActionCreator } from "../../../redux/profileReduser";
+import { addPostActionCreator, updataNewPostTextActionCreator } from "../../../redux/profileReduser";
+
 
 const MyPosts = (props) => {
   let postElements = props.posts.map((post) => (
-    <Post message={post.message} likecount={post.likeCount} />
+      <Post message={post.message} likecount={post.likeCount}/>
   ));
 
   let newPostElement = React.createRef();
@@ -22,23 +22,23 @@ const MyPosts = (props) => {
   };
 
   return (
-    <div className={styles.postsBlock}>
-      <h3>My Posts</h3>
+      <div className={styles.postsBlock}>
+        <h3>My Posts</h3>
 
-      <div>
+        <div>
         <textarea
-          onChange={onPostChange}
-          className={styles.textarea}
-          ref={newPostElement}
-          value={props.newPostText}
+            onChange={onPostChange}
+            className={styles.textarea}
+            ref={newPostElement}
+            value={props.newPostText}
         />
-        <button onClick={addPost} className={styles.btn}>
-          Add post
-        </button>
-      </div>
+          <button onClick={addPost} className={styles.btn}>
+            Add post
+          </button>
+        </div>
 
-      <div className={styles.posts}>{postElements}</div>
-    </div>
+        <div className={styles.posts}>{postElements}</div>
+      </div>
   );
 };
 

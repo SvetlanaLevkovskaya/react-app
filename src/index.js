@@ -6,19 +6,17 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/state";
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
 let rerenderEntireTree = (state) => {
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(
-    <React.StrictMode>
-      <BrowserRouter>
-        <App
+  root.render(<React.StrictMode>
+    <BrowserRouter>
+      <App
           state={state}
           dispatch={store.dispatch.bind(store)}
           store={store}
-        />
-      </BrowserRouter>
-    </React.StrictMode>
-  );
+      />
+    </BrowserRouter>
+  </React.StrictMode>);
 };
 
 rerenderEntireTree(store.getState());
