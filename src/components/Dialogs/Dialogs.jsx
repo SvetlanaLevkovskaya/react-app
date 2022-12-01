@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Dialogs.module.css";
 import DialogItem from "./DialogItem/DialogItem";
-import Message from "./Message/Message";
+import MessageItem from "./MessageItem/MessageItem";
 import {addMessageActionCreator, updataNewMessageTextActionCreator,} from "../../redux/dialogReduser";
 
 
@@ -12,7 +12,7 @@ const Dialogs = (props) => {
       <DialogItem name={d.name} id={d.id}/>
   ));
   let messagesElements = state.messages.map((m) => (
-      <Message message={m.message}/>
+      <MessageItem message={m.message}/>
   ));
   let newMessageBody = state.newMessageBody;
 
@@ -27,9 +27,9 @@ const Dialogs = (props) => {
 
   return (
       <div className={styles.dialogs}>
-        <div className={styles.dialogsItems}>{dialogsElements}</div>
-        <div className={styles.messages}>
-          <div>{messagesElements}</div>
+        <div className={styles.dialogItems}>{dialogsElements}</div>
+        <div className={styles.messageItems}>{messagesElements}
+
           <div className={styles.addMessage}>
             <div>
             <textarea
@@ -45,6 +45,7 @@ const Dialogs = (props) => {
               </button>
             </div>
           </div>
+
         </div>
       </div>
   );

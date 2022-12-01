@@ -17,11 +17,11 @@
   text-decoration: underline;
 }
 
-.dialogsItems {
+.dialogItems {
   padding: 10px;
 }
 
-.messages {
+.messageItems {
   padding: 10px;
   color: white;
 }
