@@ -2,67 +2,62 @@
     margin: 5px;
     padding: 10px;
     grid-area: n;
-    background-color:rgb(244, 203, 246);
-  }
+    background-color: rgb(244, 203, 246);
+}
 
 .item a {
     color: white;
     text-decoration: none;
 }
 
-
 .item a:hover {
-  color:black;
-  text-decoration: underline;
+   /* color: black;*/
+    text-decoration: underline;
 }
 
-.item .active {
-  color:black;
-  text-decoration: underline;
-}
 
 .itemFriends {
-  padding: 30px 0px 0px 0px;
-  font-size: 20px;
-  font-weight: 600;
+    padding: 30px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .itemFriends a {
-  color: white;
-  text-decoration: none;
-  
+    color: white;
+    text-decoration: none;
+
 }
 
 .itemFriends a:hover {
-  color:black;
-  text-decoration: underline;
+    color: black;
+    text-decoration: underline;
 }
 
 .itemFriends .active {
-  color:black;
-  text-decoration: underline;
- 
+    color: black;
+    text-decoration: underline;
+
 }
 
 .circle {
-  fill: #456BD9;
-  stroke: white;
-  stroke-width: 0.1875em; 
+    fill: #456BD9;
+    stroke: white;
+    stroke-width: 0.1875em;
 }
 
 .friends {
-  color: white;
-  font-size: 16px;
+    color: white;
+    font-size: 16px;
 
 }
 
 .friend {
-  padding: 0px 10px 0px 0px;
+    padding: 0px 10px 0px 0px;
 }
 
-.conteiner {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
