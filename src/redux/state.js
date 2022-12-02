@@ -9,7 +9,7 @@ let store = {
           {id: 1, message: "Hi, how are you?", likeCount: "15"},
           {id: 2, message: "Hi, it's so awesome!", likeCount: "8"},
       ],
-      newPostText: "",
+      newPostText: "it",
     },
 
     dialogsPage: {
@@ -42,6 +42,7 @@ let store = {
   },
 
   _callSubscriber() {
+
   },
 
   getState() {

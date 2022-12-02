@@ -6,6 +6,7 @@ import {addMessageActionCreator, updataNewMessageTextActionCreator,} from "../..
 
 
 const Dialogs = (props) => {
+
   let state = props.store.getState().dialogsPage;
 
   let dialogsElements = state.dialogs.map((d) => (
@@ -17,7 +18,7 @@ const Dialogs = (props) => {
   let newMessageBody = state.newMessageBody;
 
   let onSendMessageClick = () => {
-    props.store.dispatch(addMessageActionCreator());
+   props.store.dispatch(addMessageActionCreator());
   };
 
   let onNewMessageChange = (e) => {

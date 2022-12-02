@@ -3,8 +3,9 @@ import styles from "./Post.module.css";
 import post from "./post.png";
 
 class Post extends Component {
+
   render() {
-    return (
+   return (
       <div className={styles.items} >
         <img src={post} className={styles.post} alt="post" />
         {this.props.message}

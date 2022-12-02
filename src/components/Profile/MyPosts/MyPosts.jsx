@@ -5,8 +5,9 @@ import { addPostActionCreator, updataNewPostTextActionCreator } from "../../../r
 
 
 const MyPosts = (props) => {
+
   let postElements = props.posts.map((post) => (
-      <Post message={post.message} likecount={post.likeCount}/>
+    <Post message={post.message} likecount={post.likeCount} />
   ));
 
   let newPostElement = React.createRef();
@@ -22,23 +23,23 @@ const MyPosts = (props) => {
   };
 
   return (
-      <div className={styles.postsBlock}>
-        <h3>My Posts</h3>
+    <div className={styles.postsBlock}>
+      <h3>My Posts</h3>
 
-        <div>
+      <div>
         <textarea
-            onChange={onPostChange}
-            className={styles.textarea}
-            ref={newPostElement}
-            value={props.newPostText}
+          onChange={onPostChange}
+          className={styles.textarea}
+          ref={newPostElement}
+          value={props.newPostText}
         />
-          <button onClick={addPost} className={styles.btn}>
-            Add post
-          </button>
-        </div>
-
-        <div className={styles.posts}>{postElements}</div>
+        <button onClick={addPost} className={styles.btn}>
+          Add post
+        </button>
       </div>
+
+      <div className={styles.posts}>{postElements}</div>
+    </div>
   );
 };
 

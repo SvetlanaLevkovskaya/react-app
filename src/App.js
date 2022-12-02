@@ -11,6 +11,7 @@ import Friends from "./components/Friends/Friends";
 import { Route, Routes } from "react-router-dom";
 
 const App = (props) => {
+
   return (
     <div className="app-wrapper">
       <Header />
@@ -30,7 +31,7 @@ const App = (props) => {
 
           <Route
             path="/dialogs/*"
-            element={<Dialogs store={props.store}  />}
+            element={<Dialogs store={props.store} />}
           />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
