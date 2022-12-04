@@ -1,8 +1,10 @@
 import React from "react";
+// @ts-ignore
 import styles from "./ProfileInfo.module.css";
+// @ts-ignore
 import profile from "./profile.jpg";
 
-const ProfileInfo = (props) => {
+const ProfileInfo = (props: any) => {
 
   return (
     <div>

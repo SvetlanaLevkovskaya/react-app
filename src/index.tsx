@@ -6,8 +6,8 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/state";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-let rerenderEntireTree = (state) => {
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+let rerenderEntireTree = (state: any) => {
   root.render(<React.StrictMode>
     <BrowserRouter>
       <App

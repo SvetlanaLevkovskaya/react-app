@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./../Friends.module.css";
+// @ts-ignore
+import styles from './../Friends.module.css';
 
-const FriendItem = (props) => {
+const FriendItem = (props: any) => {
   return <div className={styles.friends}>{props.name}</div>;
 };
 

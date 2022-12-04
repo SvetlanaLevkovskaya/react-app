@@ -10,7 +10,7 @@ import Settings from "./components/Settings/Settings";
 import Friends from "./components/Friends/Friends";
 import { Route, Routes } from "react-router-dom";
 
-const App = (props) => {
+const App = (props: any) => {
 
   return (
     <div className="app-wrapper">

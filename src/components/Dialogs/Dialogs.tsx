@@ -1,18 +1,19 @@
 import React from "react";
+// @ts-ignore
 import styles from "./Dialogs.module.css";
 import DialogItem from "./DialogItem/DialogItem";
 import MessageItem from "./MessageItem/MessageItem";
 import { addMessageActionCreator, updataNewMessageBodyActionCreator, } from "../../redux/dialogReduser";
 
 
-const Dialogs = (props) => {
+const Dialogs = (props: any) => {
 
   let state = props.store.getState().dialogsPage;
 
-  let dialogsElements = state.dialogs.map((d) => (
+  let dialogsElements = state.dialogs.map((d: any) => (
     <DialogItem name={d.name} id={d.id} />
   ));
-  let messagesElements = state.messages.map((m) => (
+  let messagesElements = state.messages.map((m: any) => (
     <MessageItem message={m.message} />
   ));
   let newMessageBody = state.newMessageBody;
@@ -21,7 +22,7 @@ const Dialogs = (props) => {
     props.store.dispatch(addMessageActionCreator());
   };
 
-  let onNewMessageChange = (e) => {
+  let onNewMessageChange = (e: any) => {
     let body = e.target.value;
     props.store.dispatch(updataNewMessageBodyActionCreator(body));
   };
