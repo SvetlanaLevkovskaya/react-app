@@ -1,4 +1,4 @@
-const ADD_MESSAGE = "SEND_MESSAGE";
+const ADD_MESSAGE = "ADD_MESSAGE";
 const UPDATE_NEW_MESSAGE_BODY = "UPDATE_NEW_MESSAGE_BODY";
 
 const dialogReducer = (state, action) => {
@@ -17,7 +17,7 @@ const dialogReducer = (state, action) => {
 };
 
 export const addMessageActionCreator = () => ({ type: ADD_MESSAGE });
-export const updataNewMessageTextActionCreator = (body) => ({
+export const updataNewMessageBodyActionCreator = (body) => ({
   type: UPDATE_NEW_MESSAGE_BODY,
   body: body,
 });
