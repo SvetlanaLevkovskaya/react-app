@@ -1,7 +1,9 @@
 import React from "react";
 //import styles from "./Music.module.css"
 
-const Music = (props: any) => {
+type PropsType = {}
+
+const Music: React.FC<PropsType> = (props) => {
   return <div>Music</div>;
 };
 

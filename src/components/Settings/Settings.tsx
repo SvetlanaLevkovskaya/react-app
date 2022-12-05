@@ -1,7 +1,10 @@
 import React from "react";
 //import styles from "./Settings.module.css"
 
-const Settings = (props: any) => {
+
+type PropsType = {}
+
+const Settings: React.FC<PropsType> = (props) => {
   return <div>Settings</div>;
 };
 

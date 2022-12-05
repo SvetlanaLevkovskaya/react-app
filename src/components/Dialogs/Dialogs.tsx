@@ -5,6 +5,9 @@ import DialogItem from "./DialogItem/DialogItem";
 import MessageItem from "./MessageItem/MessageItem";
 import { addMessageActionCreator, updataNewMessageBodyActionCreator, } from "../../redux/dialogReduser";
 
+type PropsType = {
+
+}
 
 const Dialogs = (props: any) => {
 

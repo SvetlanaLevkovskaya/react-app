@@ -5,8 +5,13 @@ import styles from "./DialogItem.module.css";
 // @ts-ignore
 import dialogItem from "./dialogItem.png";
 
+type PropsType = {
+  id: string
+  name: string
+}
 
-const DialogItem = (props: any) => {
+
+const DialogItem: React.FC<PropsType> = (props) => {
 
   let path = props.id;
 

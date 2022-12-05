@@ -2,18 +2,30 @@ import React from "react";
 // @ts-ignore
 import styles from "./MyPosts.module.css";
 import Post from "./Post/Post";
-import { addPostActionCreator, updataNewPostTextActionCreator } from "../../../redux/profileReduser";
+import {addPostActionCreator, updataNewPostTextActionCreator} from "../../../redux/profileReduser";
+import {PostType} from "../../../types/types";
 
 
-const MyPosts = (props: any) => {
+type MapMyPostType = {
+  posts: Array<PostType>
+  dispatch(any: any): void; //AddPostActionType
+  newPostText: string
+}
 
-  let postElements = props.posts.map((post: {message: string, likeCount: string }) => (
-    <Post message={post.message} likecount={post.likeCount} />
+/*type DispatchType = {
+  addPost: () => ({ type: ADD_POST })
+  onPostChange: (text: string) => ({ type: UPDATE_NEW_POST_TEXT, newText: string })
+}*/
+
+const MyPosts: React.FC<MapMyPostType> = (props) => {
+
+  let postElements = props.posts.map((post) => (
+      <Post id={post.id} message={post.message} likeCount={post.likeCount} />
   ));
 
   let newPostElement = React.createRef<HTMLTextAreaElement>();
 
-  let addPost = () => {
+  let addPost = (values: any) => {
     props.dispatch(addPostActionCreator());
   };
 
@@ -26,23 +38,23 @@ const MyPosts = (props: any) => {
   };
 
   return (
-    <div className={styles.postsBlock}>
-      <h3>My Posts</h3>
+      <div className={styles.postsBlock}>
+        <h3>My Posts</h3>
 
-      <div>
+        <div>
         <textarea
-          className={styles.textarea}
-          ref={newPostElement}
-          value={props.newPostText}
-          onChange={onPostChange}
+            className={styles.textarea}
+            ref={newPostElement}
+            value={props.newPostText}
+            onChange={onPostChange}
         />
-        <button onClick={addPost} className={styles.btn}>
-          Add post
-        </button>
-      </div>
+          <button onClick={addPost} className={styles.btn}>
+            Add post
+          </button>
+        </div>
 
-      <div className={styles.posts}>{postElements}</div>
-    </div>
+        <div className={styles.posts}>{postElements}</div>
+      </div>
   );
 };
 

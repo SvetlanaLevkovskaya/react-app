@@ -2,7 +2,9 @@ import React from "react";
 // @ts-ignore
 import styles from "./Header.module.css";
 
-const Header = () => {
+type PropsType = {}
+
+const Header: React.FC<PropsType> = () => {
   return (
     <header className={styles.header}>
       <img

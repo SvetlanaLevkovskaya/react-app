@@ -20,15 +20,16 @@ const profileReducer = (state: any, action: any) => {
   }
 };
 
-type AddPostActionType = {
+export type AddPostActionType = {
   type: typeof ADD_POST
 }
 export const addPostActionCreator = (): AddPostActionType => ({ type: ADD_POST });
 
-type UpdateNewPostActionType = {
+export type UpdateNewPostActionType = {
   type: typeof UPDATE_NEW_POST_TEXT,
   newText: string
 }
+
 export const updataNewPostTextActionCreator = (text: string): UpdateNewPostActionType => ({
   type: UPDATE_NEW_POST_TEXT,
   newText: text,
