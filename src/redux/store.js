@@ -1,15 +1,6 @@
 import dialogReducer from "./dialogReduser";
 import profileReducer from "./profileReduser";
 import navBarReducer from "./navBarReduser";
-//import {combineReducers} from "redux"
-
-/*let rootReducer = combineReducers({
-  profilePage: profileReducer,
-  dialogsPage: dialogReducer,
-  navBar: navBarReducer
-
-})
-let RootReducerType = typeof rootReducer;*/
 
 let store = {
   _state: {

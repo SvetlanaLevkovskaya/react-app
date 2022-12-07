@@ -10,6 +10,9 @@ let rootReducer = combineReducers({
   navBar: navBarReducer
 
 })
+/*let RootReducerType = typeof rootReducer;
+export type AppStateType = ReturnType<RootReducerType>*/
+
 
 let store = createStore(rootReducer);
 

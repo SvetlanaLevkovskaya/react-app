@@ -2,6 +2,20 @@ import React from "react";
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
+/*
+type PropType = {
+  dispatch: Function
+  profilePage: {
+    posts: {
+      id: number
+      likeCount: string
+      message: string
+    },
+    newPostText: string
+  }
+}
+*/
+
 const Profile = (props: any) => {
 
   return (
