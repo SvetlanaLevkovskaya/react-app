@@ -5,13 +5,14 @@ import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/redux-store";
+import {StateType} from "./types/types";
 
 //const root = ReactDOM.createRoot(document.getElementById("root")!);
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement
 );
 
-let rerenderEntireTree = (state: any) => {
+let rerenderEntireTree = (state: StateType) => {
 
   root.render(<React.StrictMode>
     <BrowserRouter>

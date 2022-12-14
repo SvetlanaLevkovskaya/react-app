@@ -9,8 +9,10 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import Friends from "./components/Friends/Friends";
 import { Route, Routes } from "react-router-dom";
+import {AppType} from "./types/types";
 
-const App = (props: any) => {
+
+const App: React.FC<AppType> = (props) => {
 
   return (
     <div className="app-wrapper">
